@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SabKuchhOnline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcc00; /* yellowish shade */
+            color: #333; /* dark font for contrast */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #023e8a;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #0077b6;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #0096c7;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 10px;
+        }
+
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filters select,
+        .filters input[type="text"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex: 1 1 150px;
+        }
+
+        .job {
+            background-color: #e7f1ff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #0077b6;
+            border-radius: 5px;
+        }
+
+        .job h4 {
+            margin: 0 0 5px;
+        }
+
+        .job a {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #0077b6;
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .job a:hover {
+            background-color: #005f87;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        ul li a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        @media (max-width: 600px) {
+            .filters {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SabKuchhOnline</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.sarkariresult.com/">SarkariResult</a></li>
+                <li><a href="https://www.lnmu.ac.in/">LNMU</a></li>
+                <li><a href="https://dlrs.bihar.gov.in/?AspxAutoDetectCookieSupport=1">जमीन सर्वे </a></li>
+                <li><a href="https://medhasoft.bihar.gov.in/" target="_blank" rel="noopener">Medhasoft</a></li>
+                <li><a href="https://serviceonline.bihar.gov.in/resources/homePage/10/loginEnglish.htm" target="_blank" rel="noopener">RTPS</a></li>
+                <li><a href="https://www.ilovepdf.com/">PDF Tools</a></li>
+                <li><a href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank" rel="noopener">Land Records</a></li>
+                <li><a href="https://upsc.gov.in/index.php" target="_blank" rel="noopener">Civil Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="jobs">
+            <h2>Government Job Updates</h2>
+            <div class="filters">
+                <select>
+                    <option>All Qualifications</option>
+                    <option>10th</option>
+                    <option>12th</option>
+                    <option>Graduation</option>
+                </select>
+                <select>
+                    <option>All Departments</option>
+                    <option>Railway</option>
+                    <option>Police</option>
+                    <option>Banking</option>
+                </select>
+                <select>
+                    <option>All States</option>
+                    <option>Bihar</option>
+                    <option>UP</option>
+                </select>
+            </div>
+            <div id="job-listings">
+                <p>No job listings available at the moment.</p>
+            </div>
+        </section>
+
+        <section id="student">
+            <h2>Student Services</h2>
+            <ul>
+                <li><a href="#">Check Bihar Board Results</a></li>
+                <li><a href="#">Check CBSE Results</a></li>
+                <li><a href="#">Apply for Scholarships</a></li>
+                <li><a href="#">Upcoming Exam Notifications</a></li>
+            </ul>
+        </section>
+
+        <section id="rtps">
+            <h2>RTPS & Block-Level Services</h2>
+            <ul>
+                <li><a href="#">Apply for Caste, Income, Residence Certificates</a></li>
+                <li><a href="#">Track RTPS Application Status</a></li>
+                <li><a href="#">Generate and Download PDFs</a></li>
+            </ul>
+        </section>
+
+        <section id="documents">
+            <h2>Document Tools</h2>
+            <ul>
+                <li><a href="#">PDF Compressor</a></li>
+                <li><a href="#">PDF to Word</a></li>
+                <li><a href="#">Word to PDF</a></li>
+                <li><a href="#">Image Resizer</a></li>
+                <li><a href="#">Image to PDF</a></li>
+                <li><a href="#">PDF to Image</a></li>
+            </ul>
+        </section>
+
+        <section id="land">
+            <h2>Bihar Land Records</h2>
+            <ul>
+                <li><a href="#">View Khasra and Khatauni</a></li>
+                <li><a href="#">Access Bhu Naksha</a></li>
+                <li><a href="#">Download or Print Records</a></li>
+            </ul>
+        </section>
+
+        <section id="civil">
+            <h2>Civil Services</h2>
+            <ul>
+                <li><a href="#">Apply for UPSC/BPSC</a></li>
+                <li><a href="#">Download Previous Year Papers</a></li>
+                <li><a href="#">Check Exam Schedule</a></li>
+                <li><a href="#">Preparation Resources</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bihar Digital Services. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
