@@ -1,241 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en" class="dark"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SabKuchhOnline | India's All-in-One Online Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }// Dummy Job Auto-Fetch (Replace with real fetch later)
+document.addEventListener("DOMContentLoaded", () => {
+  const jobsSection = document.getElementById("jobUpdates");
+  jobsSection.innerHTML = "";
+  const dummyJobs = [
+    { title: "Bihar Police Constable 2025", link: "https://www.sarkariresult.com/" },
+    { title: "RRB NTPC Notification 2025", link: "https://www.rrbcdg.gov.in/" },
+    { title: "UPSC Prelims 2025 Form", link: "https://upsc.gov.in/" },
+  ];
+  dummyJobs.forEach(job => {
+    const div = document.createElement("div");
+    div.className = "bg-gray-100 dark:bg-gray-800 p-4 mb-2 rounded-md";
+    div.innerHTML = `<h3 class='text-lg font-semibold'>${job.title}</h3><a href='${job.link}' target='_blank' class='text-blue-600 dark:text-blue-300 underline'>Apply Now</a>`;
+    jobsSection.appendChild(div);
+  });
+});
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SabKuchhOnline</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+// AI Chatbot Toggle
+function toggleBot() {
+  const bot = document.getElementById("chatbot");
+  bot.classList.toggle("hidden");
+}
 
-        header {
-            background-color: #ffcc00; /* yellowish shade */
-            color: #333; /* dark font for contrast */
-            padding: 20px;
-            text-align: center;
-        }
+  </script>
+</head><body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+  <header class="flex flex-col md:flex-row items-center justify-between p-4 bg-yellow-400 text-black shadow-md">
+    <h1 class="text-2xl font-bold mb-2 md:mb-0">SabKuchhOnline</h1>
+    <nav>
+      <ul class="flex flex-wrap gap-2">
+        <li><a href="https://www.sarkariresult.com/" class="bg-blue-600 text-white px-3 py-1 rounded">SarkariResult</a></li>
+        <li><a href="https://www.lnmu.ac.in/" class="bg-blue-600 text-white px-3 py-1 rounded">LNMU</a></li>
+        <li><a href="https://dlrs.bihar.gov.in/?AspxAutoDetectCookieSupport=1" class="bg-blue-600 text-white px-3 py-1 rounded">जमीन सर्वे</a></li>
+        <li><a href="https://medhasoft.bihar.gov.in/" class="bg-blue-600 text-white px-3 py-1 rounded" target="_blank">Medhasoft</a></li>
+        <li><a href="https://serviceonline.bihar.gov.in/resources/homePage/10/loginEnglish.htm" class="bg-blue-600 text-white px-3 py-1 rounded" target="_blank">RTPS</a></li>
+        <li><a href="https://www.ilovepdf.com/" class="bg-blue-600 text-white px-3 py-1 rounded">PDF Tools</a></li>
+        <li><a href="https://biharbhumi.bihar.gov.in/Biharbhumi/" class="bg-blue-600 text-white px-3 py-1 rounded" target="_blank">Land Records</a></li>
+        <li><a href="https://upsc.gov.in/index.php" class="bg-blue-600 text-white px-3 py-1 rounded" target="_blank">Civil Services</a></li>
+      </ul>
+    </nav>
+    <div class="flex gap-2 mt-3 md:mt-0">
+      <button onclick="toggleDarkMode()" class="bg-black text-white px-3 py-1 rounded">🌓 Theme</button>
+      <button onclick="toggleBot()" class="bg-indigo-600 text-white px-3 py-1 rounded">🤖 Chat</button>
+    </div>
+  </header>  <section class="text-center py-10 px-4">
+    <h2 class="text-3xl font-bold mb-2">India's All-in-One Online Platform</h2>
+    <p class="text-lg">PDF Tools, Sarkari Services, Forms – Sab Kuchh Ek Jagah!</p>
+  </section>  <main class="p-4 max-w-5xl mx-auto">
+    <section class="mb-8">
+      <h2 class="text-xl font-bold border-b pb-2 mb-4">🧾 Latest Sarkari Job Updates</h2>
+      <div id="jobUpdates" class="space-y-3"></div>
+    </section><section class="mb-8">
+  <h2 class="text-xl font-bold border-b pb-2 mb-4">🧰 PDF Tools</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <a href="https://www.ilovepdf.com/compress_pdf" class="bg-gray-200 dark:bg-gray-800 p-4 rounded-lg hover:shadow">Compress PDF</a>
+    <a href="https://www.ilovepdf.com/pdf_to_word" class="bg-gray-200 dark:bg-gray-800 p-4 rounded-lg hover:shadow">PDF to Word</a>
+    <a href="https://www.ilovepdf.com/word_to_pdf" class="bg-gray-200 dark:bg-gray-800 p-4 rounded-lg hover:shadow">Word to PDF</a>
+    <a href="https://www.ilovepdf.com/pdf_to_jpg" class="bg-gray-200 dark:bg-gray-800 p-4 rounded-lg hover:shadow">PDF to JPG</a>
+    <a href="https://www.ilovepdf.com/jpg_to_pdf" class="bg-gray-200 dark:bg-gray-800 p-4 rounded-lg hover:shadow">JPG to PDF</a>
+    <a href="https://www.ilovepdf.com/merge_pdf" class="bg-gray-200 dark:bg-gray-800 p-4 rounded-lg hover:shadow">Merge PDF</a>
+  </div>
+</section>
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #023e8a;
-            margin: 0;
-        }
+<section class="mb-8">
+  <h2 class="text-xl font-bold border-b pb-2 mb-4">📺 Our YouTube Video</h2>
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe class="w-full h-64 rounded-xl" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video" allowfullscreen></iframe>
+  </div>
+</section>
 
-        nav ul li {
-            margin: 10px;
-        }
+<section class="mb-8">
+  <h2 class="text-xl font-bold border-b pb-2 mb-4">💸 Donate to Support</h2>
+  <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl text-center">
+    <label for="amountSelect" class="block mb-2 font-semibold">Select Amount:</label>
+    <select id="amountSelect" class="p-2 rounded-md border dark:bg-gray-700 dark:text-white">
+      <option value="1000">₹10</option>
+      <option value="2000">₹20</option>
+      <option value="5000">₹50</option>
+      <option value="10000">₹100</option>
+    </select>
+    <button id="donateButton" class="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl">Donate Now</button>
+  </div>
+</section>
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 15px;
-            background-color: #0077b6;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        nav ul li a:hover {
-            background-color: #0096c7;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            background-color: #fff;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            border-bottom: 2px solid #0077b6;
-            padding-bottom: 10px;
-        }
-
-        .filters {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .filters select,
-        .filters input[type="text"] {
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            flex: 1 1 150px;
-        }
-
-        .job {
-            background-color: #e7f1ff;
-            padding: 15px;
-            margin-bottom: 10px;
-            border-left: 5px solid #0077b6;
-            border-radius: 5px;
-        }
-
-        .job h4 {
-            margin: 0 0 5px;
-        }
-
-        .job a {
-            display: inline-block;
-            margin-top: 10px;
-            background-color: #0077b6;
-            color: #fff;
-            padding: 6px 12px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
-
-        .job a:hover {
-            background-color: #005f87;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-        }
-
-        ul li a {
-            color: #0077b6;
-            text-decoration: none;
-        }
-
-        ul li a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #023e8a;
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-        }
-
-        @media (max-width: 600px) {
-            .filters {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>SabKuchhOnline</h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.sarkariresult.com/">SarkariResult</a></li>
-                <li><a href="https://www.lnmu.ac.in/">LNMU</a></li>
-                <li><a href="https://dlrs.bihar.gov.in/?AspxAutoDetectCookieSupport=1">जमीन सर्वे </a></li>
-                <li><a href="https://medhasoft.bihar.gov.in/" target="_blank" rel="noopener">Medhasoft</a></li>
-                <li><a href="https://serviceonline.bihar.gov.in/resources/homePage/10/loginEnglish.htm" target="_blank" rel="noopener">RTPS</a></li>
-                <li><a href="https://www.ilovepdf.com/">PDF Tools</a></li>
-                <li><a href="https://biharbhumi.bihar.gov.in/Biharbhumi/" target="_blank" rel="noopener">Land Records</a></li>
-                <li><a href="https://upsc.gov.in/index.php" target="_blank" rel="noopener">Civil Services</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="jobs">
-            <h2>Government Job Updates</h2>
-            <div class="filters">
-                <select>
-                    <option>All Qualifications</option>
-                    <option>10th</option>
-                    <option>12th</option>
-                    <option>Graduation</option>
-                </select>
-                <select>
-                    <option>All Departments</option>
-                    <option>Railway</option>
-                    <option>Police</option>
-                    <option>Banking</option>
-                </select>
-                <select>
-                    <option>All States</option>
-                    <option>Bihar</option>
-                    <option>UP</option>
-                </select>
-            </div>
-            <div id="job-listings">
-                <p>No job listings available at the moment.</p>
-            </div>
-        </section>
-
-        <section id="student">
-            <h2>Student Services</h2>
-            <ul>
-                <li><a href="#">Check Bihar Board Results</a></li>
-                <li><a href="#">Check CBSE Results</a></li>
-                <li><a href="#">Apply for Scholarships</a></li>
-                <li><a href="#">Upcoming Exam Notifications</a></li>
-            </ul>
-        </section>
-
-        <section id="rtps">
-            <h2>RTPS & Block-Level Services</h2>
-            <ul>
-                <li><a href="#">Apply for Caste, Income, Residence Certificates</a></li>
-                <li><a href="#">Track RTPS Application Status</a></li>
-                <li><a href="#">Generate and Download PDFs</a></li>
-            </ul>
-        </section>
-
-        <section id="documents">
-            <h2>Document Tools</h2>
-            <ul>
-                <li><a href="#">PDF Compressor</a></li>
-                <li><a href="#">PDF to Word</a></li>
-                <li><a href="#">Word to PDF</a></li>
-                <li><a href="#">Image Resizer</a></li>
-                <li><a href="#">Image to PDF</a></li>
-                <li><a href="#">PDF to Image</a></li>
-            </ul>
-        </section>
-
-        <section id="land">
-            <h2>Bihar Land Records</h2>
-            <ul>
-                <li><a href="#">View Khasra and Khatauni</a></li>
-                <li><a href="#">Access Bhu Naksha</a></li>
-                <li><a href="#">Download or Print Records</a></li>
-            </ul>
-        </section>
-
-        <section id="civil">
-            <h2>Civil Services</h2>
-            <ul>
-                <li><a href="#">Apply for UPSC/BPSC</a></li>
-                <li><a href="#">Download Previous Year Papers</a></li>
-                <li><a href="#">Check Exam Schedule</a></li>
-                <li><a href="#">Preparation Resources</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 SabKuchhOnline. All Rights Reserved.</p>
-    </footer>
-</body>
-
+  </main>  <footer class="text-center p-4 bg-blue-900 text-white">
+    <p>&copy; 2025 SabKuchhOnline. All Rights Reserved.</p>
+  </footer>  <div id="chatbot" class="fixed bottom-4 right-4 w-[300px] h-[400px] bg-white dark:bg-gray-800 text-black dark:text-white rounded-xl shadow-xl p-4 hidden z-50">
+    <h3 class="font-bold mb-2">🤖 AI Chatbot</h3>
+    <iframe src="https://www.tidio.com/popup-chat/demo" class="w-full h-full rounded-lg border-0"></iframe>
+  </div>  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>  <script>
+    document.getElementById("donateButton").onclick = function (e) {
+      const amount = document.getElementById("amountSelect").value;
+      var options = {
+        key: "rzp_test_YourKeyHere",
+        amount: amount,
+        currency: "INR",
+        name: "SabKuchhOnline",
+        description: "Support Our Work",
+        handler: function (response) {
+          alert("Donation Successful! Payment ID: " + response.razorpay_payment_id);
+        },
+        theme: { color: "#22c55e" },
+      };
+      var rzp = new Razorpay(options);
+      rzp.open();
+      e.preventDefault();
+    };
+  </script></body>
 </html>
